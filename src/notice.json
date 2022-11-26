@@ -1,0 +1,14 @@
+{
+  "zn": {
+    "uninstall": "浏览器没有安装CortexWallet",
+    "unlogin": "CortexWallet未登录"
+  },
+  "en": {
+    "uninstall": "CortexWallet is not installed in the browser",
+    "unlogin": "CortexWallet not login"
+  },
+  "hn": {
+    "uninstall": "브라우저 CortexWallet 설치 안됨 ",
+    "unlogin": "CortexWallet 로그인하지 못함"
+  }
+}

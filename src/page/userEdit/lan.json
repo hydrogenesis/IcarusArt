@@ -1,0 +1,42 @@
+{
+  "zn": {
+    "edit": "编辑个人信息",
+    "avatar": "更换头像",
+    "dis1": "支持JPEG,GIF,JPG格式，推荐尺寸为160px*160px",
+    "name": "昵称",
+    "email": "邮箱",
+    "area": "地区",
+    "webUrl": "个人网址",
+    "introduce": "介绍",
+    "save": "保存设置",
+    "emailM": "邮箱格式错误",
+    "error9": "图片不得大于2M"
+  },
+  "en": {
+    "edit": "Edit Personal Information",
+    "avatar": "Replace",
+    "dis1": "Support JPEG,GIF,JPG format，recommended size： 160px*160px",
+    "name": "Name",
+    "email": "Email",
+    "area": "Location",
+    "webUrl": "Personal website",
+    "introduce": "Introduction",
+    "save": "Save",
+    "emailM": "Invalid format",
+    "error9": "The picture should not be larger than 2M"
+  },
+  "hn": {
+    "edit": "개인 정보 편집",
+    "avatar": "교체",
+    "dis1": "지지 JPEG,GIF,JPG  격식，추천: 160px*160px",
+    "name": "닉네임",
+    "email": "email",
+    "area": "지역",
+    "webUrl": "개인 사이트 주소",
+    "introduce": "소개",
+    "save": "설정 저장",
+    "emailM": "잘못된 형식",
+    "error9": "그림이 2M보다 크면 안 됩니다."
+  },
+  "sn": {"edit":"Editar información personal","avatar":"Cambiar avatar","dis1":"Admite formato JPEG, GIF, JPG, el tamaño recomendado es 160px*160px","name":"apodo","email":"correo electrónico","area":"región","webUrl":"sitio web personal","introduce":"introducción","save":"Guardar configuración","emailM":"Error de formato de correo electrónico","error9":"La imagen no debe ser mayor de 2M"}
+}

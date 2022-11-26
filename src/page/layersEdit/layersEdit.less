@@ -1,0 +1,200 @@
+#layersEdit {
+  .imgTYpe {
+    font-size: 12px;
+    color: #888;
+    margin-top: 20px;
+  }
+  background-color: white;
+  .unitlC {
+    font-size: 16px;
+    padding-left: 10px;
+    color: orange;
+  }
+  .contentBox {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0 200px 0;
+    h1 {
+      font-size: 24px;
+      font-weight: 800;
+      margin: 10px 0;
+    }
+    .flex {
+      .ant-btn {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 0 40px;
+        display: block;
+        margin: 20px 0;
+      }
+      display: flex;
+      width: 100%;
+      .info {
+        width: 300px;
+        h3 {
+          margin: 10px 0;
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          color: #888;
+        }
+        .imgListW {
+          height: 400px;
+          overflow: auto;
+          text-align: center;
+          width: 100%;
+          img {
+            display: block;
+            float: left;
+            max-width: 120px;
+            max-height: 120px;
+            border: 1px solid #888;
+            cursor: pointer;
+            margin: 10px auto;
+            &.redBorder {
+              border: 2px #1890ff solid;
+            }
+          }
+        }
+        button {
+          margin: 20px 0;
+        }
+      }
+    }
+    .canvas {
+      width: 100%;
+      display: flex;
+      .flex2 {
+        margin-right: 20px;
+        position: relative;
+        width: 540px;
+        height: 540px;
+        h2 {
+          margin: 10px 0;
+          font-size: 24px;
+        }
+        #canvas {
+          width: 540px;
+          height: 540px;
+        }
+        img {
+          max-width: 100%;
+          max-height: 100%;
+          position: absolute;
+          left: 50%;
+          top: calc(50% + 57px);
+          transform: translate(-50%, -50%);
+        }
+        video {
+          max-width: 100%;
+          max-height: 100%;
+          position: absolute;
+          left: 50%;
+          top: calc(50% + 57px);
+          transform: translate(-50%, -40%);
+        }
+      }
+      .price {
+        h2 {
+          margin: 10px 0;
+          font-size: 24px;
+        }
+        width: 480px;
+        .ant-tabs {
+          border: 3px solid black;
+          border-radius: 20px;
+          padding: 10px;
+          height: 540px;
+          position: relative;
+        }
+      }
+    }
+    .layer {
+      width: 100%;
+      height: 280px;
+      overflow-x: auto;
+      margin: 40px 0;
+      .imgBox {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 200px;
+        img {
+          max-height: 200px;
+          width: 200px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .ant-spin {
+    position: fixed;
+    top: 200px;
+  }
+  .ant-row {
+    display: block;
+    .ant-form-item-label {
+      display: block;
+      text-align: left;
+      font-weight: 600;
+    }
+    input {
+      border: none;
+      border-bottom: 1px #888 solid;
+    }
+  }
+  .progressS  {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    &.show {
+      display: block;
+    }
+    >div {
+      position: absolute;
+      width: 300px;
+      padding: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px black solid;
+      border-radius: 20px;
+      background-color: white;
+      p {
+        line-height: 40px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size: 16px;
+        .ant-spin {
+          position: unset !important;
+          .ant-spin-dot-item {
+            background-color: #888;
+          }
+          &.is {
+            .ant-spin-dot-item {
+              background-color: orange;
+            }
+          }
+        }
+        .anticon-close-circle {
+          color: red;
+          line-height: 40px;
+        }
+        .anticon-check-circle{
+          color: green;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

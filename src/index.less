@@ -1,0 +1,269 @@
+body {
+  font: 14px 'Century Gothic', Futura, sans-serif;
+  transition: all 1s;
+  background-color: black !important;
+  color: white !important;
+  scrollbar-width: none;
+  -ms-overflow-style:none;
+  font-family: 'Montserrat';
+}
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.clear {
+  clear: both;
+}
+.ant-notification {
+  top: 100px !important;
+}
+ol,
+ul {
+  padding-left: 30px;
+}
+a {
+  color: black;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+#app {
+}
+
+#head {
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  .nologin {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    left: calc(75% + 300px);
+    background-color: #FFA755;
+    text-align: center;
+    transition: all .5s;
+    cursor: pointer;
+    img {
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+    }
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 0 4px 4px 0 rgba(255, 255, 255, 0.2);
+    }
+  }
+  .userImg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 20px;
+    left: calc(75% + 300px);
+    overflow: hidden;
+    color: white;
+    img {
+      height: 40px;
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+  .head-content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    .head-logo {
+      line-height: 80px;
+      height: 80px;
+      width: 160px;
+      position: relative;
+      .logo2{
+        width: 60px;
+        position: absolute;
+        right: -70px;
+        top: 26px;
+        cursor: pointer;
+      }
+      .chainChance{
+        position: absolute;
+        right: -170px;
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        top: 30px;
+        border: 2px  solid  white;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: white;
+        p { 
+          line-height: 20px;
+          font-size: 10px;
+          padding: 2px 0;
+          margin-bottom: 0;
+          width: 65px;
+          position: relative;
+          z-index: 1;
+          &:nth-child(1) {
+            text-align: right;
+            padding-right: 10px;
+            &::before {
+              content: '';
+              border: solid 24px;
+              border-color: inherit;
+              position: absolute;
+              right: -24px;
+              top: 0;
+              z-index: -1;
+            }
+          }
+
+          &:nth-child(2) {
+            text-align: left;
+            &::before {
+              content: '';
+              border: solid 24px;
+              border-color: inherit;
+              position: absolute;
+              left: -24px;
+              top: -24px;
+              z-index: -1;
+            }
+          }
+          a {
+            color: #888;
+          }
+          &.active {
+            a {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .headRight {
+      float: right;
+      position: relative;
+      .head-search {
+        width: 1200px;
+        height: 80px;
+        position: fixed;
+        left: calc(50% - 600px);
+        transition: all 0.5s;
+        top: -80px;
+        input {
+          border-radius: 0;
+          border: none;
+          background-color: rgba(0, 0, 0, 0.9);
+          line-height: 80px;
+          height: 80px;
+          caret-color: white;
+          color: #888;
+          font-size: 24px;
+        }
+        &.show {
+          transform: translateY(80px);
+        }
+      }
+      a {
+        margin: 0 30px;
+        color: white;
+      }
+    }
+  }
+  .ant-dropdown-link {
+    line-height: 80px;
+  }
+  .ant-dropdown-link {
+    cursor: pointer;
+  }
+}
+
+// 重写ant部分组件样式
+
+.ant-notification-notice {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: white !important;
+  .ant-notification-notice-message {
+    color: white !important;
+  }
+  .ant-notification-notice-close {
+    color: white;
+    transition: 0.5s all;
+    &:hover {
+      color: white;
+      transform: scale(1.4);
+    }
+  }
+}
+.userPop {
+  cursor: pointer;
+  a {
+    color: black;
+    margin: 10px 0;
+    &:hover {
+      color: #1890ff;
+    }
+    display: block;
+  }
+  p {
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}
+
+#mobilePage {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  background: url('./assets/images/tw0.png');
+  background-size: 100% 100%;
+  .tw1,.tw2, a{
+    position: absolute;
+  }
+  .tw1 {
+    top: 10px;
+    width: 80%;
+    left: 10%;
+  }
+  .tw2 {
+    top: 100px;
+    width: 100%;
+    left: 0;
+  }
+  a {
+    bottom: 20px;
+    left: 50%;
+    width: 60px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }
+}
+.sortRule {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  ul {
+    padding: 0;
+  }
+  li {
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2  );
+    margin-bottom: 0 !important;
+  }
+}

@@ -1,0 +1,130 @@
+#createArtD {
+  background-color: white;
+  min-height: 100vh;
+  position: relative;
+  .content {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    h1 {
+      font-size: 32px;
+      font-weight: 600;
+      margin: 20px 0;
+    }
+    .title2 {
+      color: #888;
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 16px;
+      color: black;
+      font-weight: 500;
+      margin-top: 20px;
+      line-height: 40px;
+    }
+    input {
+      width: 600px;
+      border-radius: 15px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #f3f6f9;
+      color: #8e8e8e;
+    }
+    .ant-input-number {
+      border: none;
+      input {
+        width: 88px;
+      }
+      &:hover {
+        border: none;
+      }
+      .ant-input-number-handler-wrap {
+        display: none;
+      }
+    }
+    .ant-input-number-focused {
+      box-shadow: none;
+    }
+    textarea {
+      background-color: #f3f6f9;
+      color: #8e8e8e;
+      border-radius: 10px;
+    }
+    .lineB {
+      margin: 20px 0;
+      border-bottom: 1px solid #e9e8ec;
+    }
+    .ant-upload-drag {
+      height: 400px;
+      video,img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-height: 400px;
+        max-width: 1200px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    button {
+      margin-top: 40px;
+      background-color: black;
+      color: white;
+      padding: 5p 15px;
+      border-radius: 25px;
+    }
+  }
+  .progressS  {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1;
+    top: 0;
+    &.show {
+      display: block;
+    }
+    >div {
+      position: absolute;
+      width: 300px;
+      padding: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px black solid;
+      border-radius: 20px;
+      background-color: white;
+      p {
+        line-height: 40px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size: 16px;
+        .ant-spin {
+          position: unset !important;
+          .ant-spin-dot-item {
+            background-color: #888;
+          }
+          &.is {
+            .ant-spin-dot-item {
+              background-color: orange;
+            }
+          }
+        }
+        .anticon-close-circle {
+          color: red;
+          line-height: 40px;
+        }
+        .anticon-check-circle{
+          color: green;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+  
+}

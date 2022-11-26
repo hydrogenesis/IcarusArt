@@ -1,0 +1,30 @@
+{
+  "zn": {
+    "title": "AI生成图层",
+    "chance": "选择模型",
+    "model1": "Alice \n The SPACE",
+    "model2": "飞船图模型",
+    "generate": "预览",
+    "dis": "输入文字，AI生成图像",
+    "down": "下载"
+  },
+  "en": {
+    "title": "AI Generation",
+    "chance": "Select a model",
+    "model1": "Alice \n The SPACE",
+    "model2": "Spaceship model",
+    "generate": "Preview",
+    "dis": "Ai will generate a picture based on the input text",
+    "down": "Download"
+  },
+  "hn": {
+    "title": "AI 텍스트 프레임 만들기",
+    "chance": "모델 선택",
+    "model1": "Alice \n The SPACE",
+    "model2": "우주선 모형",
+    "generate": "미리 보기",
+    "dis": "문자를 입력하다，AI 예술품 생성",
+    "down": "다운로드"
+  },
+  "sn":{"title":"Capa generada por IA","chance":"seleccionar modelo","model1":"Alice \n The SPACE","model2":"modelo de mapa de nave espacial","generate":"vista previa","dis":"ingresar texto, imagen generada por IA","down":"descargar"}
+}

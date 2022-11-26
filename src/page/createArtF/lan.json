@@ -1,0 +1,27 @@
+{
+  "zn": {
+    "title": "创建艺术品",
+    "title2": "选择艺术品种类",
+    "title3": "如果您想上传单幅作品，请选择“创建单幅作品”",
+    "title4": "如果您想上传多图层作品，请选择“创建多图层作品”",
+    "button1": "创建单幅作品",
+    "button2": "创建多图层作品"
+  },
+  "en": {
+    "title": "Create Artwork",
+    "title2": "Choose Art Types",
+    "title3": "If you want to upload a single piece, please select ”Create Single Artwork",
+    "title4": "If you want to upload multi-layer works, please select “Create Multi-Layer Artwork”",
+    "button1": "Create a Single piece",
+    "button2": "Create Multi-layer Works"
+  },
+  "hn": {
+    "title": "예술품을 창조하다",
+    "title2": "예술품의 종류를 선택하다.",
+    "title3": "단일 작품을 업로드하려면 단일 작품 만들기를 선택하십시오",
+    "title4": "레이어 만들기 작업을 업로드하려면“레이어 만들기”를 선택하십시오",
+    "button1": "레이어 작업을 만듭니다",
+    "button2": "멀티 레이어로 작업 만들기"
+  },
+  "sn":{"title":"Crear obra de arte","title2":"Seleccione el tipo de obra de arte","title3":"Si desea cargar una sola obra de arte, seleccione 'Crear una sola obra de arte'","title4":"Si desea cargar una obra de arte de varias capas, seleccione 'Crear una obra de arte de varias capas' Obra de arte","button1":"Crear una obra de arte individual","button2":"Crear una obra de arte de varias capas"}
+}

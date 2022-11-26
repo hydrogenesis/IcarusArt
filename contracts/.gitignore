@@ -1,0 +1,11 @@
+build/
+js/artworkAbi.json
+js/account.json
+node_modules
+.secret
+# OpenZeppelin
+.openzeppelin/.session
+.openzeppelin/dev-*.json
+*.DS_store
+cache/
+artifacts/

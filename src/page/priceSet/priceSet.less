@@ -1,0 +1,170 @@
+#priceSet {
+  background-color: white;
+  min-height: 100vh;
+  color: black;
+  .unitlC {
+    font-size: 16px;
+    padding-left: 10px;
+    color: orange;
+  }
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+  .contentBox {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 80px 0;
+    h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin: 20px 0;
+    }
+  }
+  .canvasBox {
+    padding: 20px 0;
+    border-bottom: 1px solid #e9e8ec;
+    height: 600px;
+    h2 {
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    >div {
+      display: flex;
+      height: 100%;
+      .imgList {
+        position: relative;
+        width: 50%;
+        font-weight: 600;
+        overflow-y: auto;
+        height: 520px;
+        video {
+          max-height:90%;
+          width: 90%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        img {
+          float: left;
+          width: 200px;
+          display: block;
+          min-height: 100px;
+          max-height: 200px;
+          margin: 0 20px 0 0;
+          cursor: pointer;
+          &.active2 {
+            border: 1px red solid;
+          }
+        }
+        .canvasImg {
+          float: none;
+          position: absolute;
+          width: 80%;
+          max-height: 100%;
+        }
+      }
+    }
+
+    .ant-tabs {
+      border: 3px solid black;
+      border-radius: 20px;
+      padding: 10px;
+      height: 520px;
+      width: 40%;
+      position: relative;
+      .anticon-check {
+        position: absolute;
+        font-size: 24px;
+        right: 20px;
+        top: 20px;
+        &.active2 {
+          color: green;
+        }
+      }
+    }
+  }
+  .lastT {
+    margin: 20px 0;
+    text-align: right;
+    button {
+      margin-right: 10%;
+    }
+  }
+  .ant-btn {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0 40px;
+  }
+  .ant-btn[disabled] {
+    background-color: #888;
+  }
+  .ok {
+    display: block;
+    margin-top: 20px;
+  }
+  input {
+    border-radius: 15px;
+    width: 300px;
+  }
+  .ant-input-number {
+    border-radius: 15px;
+    width: 300px;
+  }
+  h3 {
+    margin: 10px 0;
+  }
+  .progressS  {
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    &.show {
+      display: block;
+    }
+    >div {
+      position: absolute;
+      width: 300px;
+      padding: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border: 3px black solid;
+      border-radius: 20px;
+      background-color: white;
+      p {
+        line-height: 40px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: space-between;
+        color: black;
+        font-size: 16px;
+        .ant-spin {
+          position: unset !important;
+          .ant-spin-dot-item {
+            background-color: #888;
+          }
+          &.is {
+            .ant-spin-dot-item {
+              background-color: orange;
+            }
+          }
+        }
+        .anticon-close-circle {
+          color: red;
+          line-height: 40px;
+        }
+        .anticon-check-circle{
+          color: green;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+#auction {
+  background-color: white;
+  min-height: 100vh;
+  padding: 100px 0;
+  .clickH {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 3;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      position: absolute;
+    }
+  }
+  .flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .info {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    .img {
+      width: 60%;
+      position: relative;
+      height: 600px;
+      img {
+        position: absolute;
+        max-width: 80%;
+        max-height: 600px;
+        cursor: zoom-in;
+      }
+      video {
+        position: absolute;
+        max-width: 80%;
+        max-height: 600px;
+      }
+    }
+    .userInfo{
+      width: 40%;
+      p {
+        font-size: 12px;
+        color: #888;
+        line-height: 30px;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 24px;
+        color: black;
+      }
+      .imgBox {
+        width: 200px;
+        display: flex;
+        float: left;
+        img {
+          display: block;
+          width: 80px;
+          transform: scale(0.8);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 40px;
+        }
+      }
+      .price {
+        button {
+          margin: 20px 0;
+        }
+        .priceNum {
+          font-size: 24px;
+          color: black;
+          margin-left: 20px;
+        }
+      }
+      .lineB {
+        margin: 20px 0 20px 0;
+        border-bottom: 1px solid #e9e8ec;
+      }
+      .describeBox {
+        position: relative;
+        padding-left: 100px;
+        margin: 20px 0;
+        span {
+          position: absolute;
+          left: 0;
+        }
+        p {
+          margin-bottom: 20px;
+          line-height: 22px;
+          height: 22px;
+          vertical-align: middle;
+          i {
+            margin-right: 10px;
+            display: inline-block;
+            height: 22px;
+            vertical-align: middle;
+            img {
+              width: 22px;
+              margin-left: 0px;
+            }
+          }
+          a {
+            color: #888;
+            line-height: 22px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .layer {
+    width: 1200px;
+    margin: 0 auto;
+    h2 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      border-bottom: 1px #888 solid;
+    }
+    .imgList {
+      height: 200px;
+      width: 100%;
+      overflow-x: auto;
+      .listBox {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 200px;
+        img {
+          height: 200px;
+          max-width: 200px;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .ant-row {
+    display: block;
+    .ant-form-item-label {
+      display: block;
+      text-align: left;
+      font-weight: 600;
+    }
+    input {
+      border: none;
+      border-bottom: 1px #888 solid;
+    }
+  }
+  .ant-btn {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 0 40px;
+  }
+}
+
+.noticeModel {
+  font-size: 12px;
+  color: #888;
+  &.red {
+    color: red;
+  }
+}
+.formItem {
+  display: flex;
+  .left {
+    display: block;
+    width: 60px;
+  }
+  .right {
+    display: block;
+  }
+}

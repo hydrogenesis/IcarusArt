@@ -1,0 +1,248 @@
+#gallery {
+  background-color: white;
+  min-height: 100vh;
+  .box {
+    padding-top: 80px;
+    width: 1200px;
+    margin: 0 auto;
+    .search {
+      h1 {
+        font-size: 60px;
+        font-weight: 800;
+        margin: 40px 0;
+      }
+      .searchButton {
+        display: flex;
+        justify-content: space-between;
+        .ant-dropdown-link {
+          color: black;
+          border-bottom: 1px solid #888;
+          font-weight: 600;
+          padding: 5px 10px;
+          padding-left: 0px;
+          font-size: 14px;
+        }
+        h4 {
+          font-weight: 400;
+          font-size: 12px;
+        }
+        .left,
+        .center {
+          width: 20%;
+          button {
+            margin-right: 20px;
+            border: 1px solid black;
+            border-radius: 15px;
+            color: black;
+            background-color: white;
+            &.is {
+              background-color: black;
+              color: white;
+            }
+          }
+        }
+        .right {
+          width: 60%;
+          text-align: right;
+        }
+      }
+    }
+    .pagBox {
+      margin: 20px 0;
+      .list {
+        width: 31%;
+        height: 490px;
+        margin: 20px 20px 40px 0;
+        float: left;
+        background-color: #232930;
+        position: relative;
+        transition: all .4s;
+        transform: translateY(0px);
+        border-radius: 15px;
+        overflow: hidden;
+        &:hover {
+          transform: translateY(-10px);
+          box-shadow: 0px 0px 10px black;
+        }
+        .type {
+          padding:0 10px ;
+          display: flex;
+          justify-content: space-between;
+          height: 26px;
+          line-height: 26px;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          margin-bottom: 0;
+          span {
+            display: inline-block;
+          }
+        }
+        img {
+          max-width: 102%;
+          max-height: 350px;
+          display: block;
+          position: relative;
+          cursor: pointer;
+        }
+        & > a {
+          display: block;
+          width: 100%;
+          height: 350px;
+          position: relative;
+          overflow: hidden;
+          background-color: white;
+          background: linear-gradient(90deg,#f2f2f2 25%,#e6e6e6 37%,#f2f2f2 63%);
+          background-size: 400% 100%;
+          animation: el-skeleton-loading 1.4s ease infinite;
+          &.complete {
+            background:unset;
+            animation: unset;
+          }
+          video {
+            width: 102%;
+            height: 350px;
+            object-fit: cover;
+          }
+          img {
+            width: 102%;
+            height: 350px;
+            object-fit: cover;
+
+          }
+          .flur {
+            position: absolute !important;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            &.width {
+              height: 350px;
+            }
+            &.height {
+              width: 100%;
+            }
+          }
+        }
+        .sellPrice {
+          span {
+            display: inline-block;
+          }
+          font-size: 12px;
+          color: #888;
+          padding: 0 10px;
+          height: 20px;
+          line-height: 20px;
+          margin-bottom: 8px;
+          display: flex;
+          justify-content: space-between;
+          .priceSpan {
+            margin-right: 20px;
+            .pricename {
+              color: white;
+              font-size: 14px;
+              margin-right: 10px;
+            }
+            .price{
+              color: orange;
+              font-size: 16px;
+            }
+          }
+          .priceSpan2 {
+            text-align: right;
+          }
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: 600;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          display: inline-block;
+          overflow: hidden;
+          height: 40px;
+          line-height: 40px;
+          width: 220px;
+          .edition {
+            font-size: 16px;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            right: 10px;
+            color: #888;
+          }
+        }
+        h3 {
+          height: 40px;
+          line-height: 40px;
+          display: flex;
+          justify-content: space-between;
+          font-size: 14px;
+          background-color: #232930;
+          color: white;
+          margin: 0;
+          padding-left:  10px;
+          .priceSpan {
+            &:first-child{
+              width: 50%;
+            }
+            &:last-child {
+              width: 50%;
+            }
+          }
+          .pricename,.price,.name{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            display: inline-block;
+            overflow: hidden;
+          }
+          .pricename {
+            width: 50%;
+          }
+          .price {
+            color: #a66f46;
+            font-size: 18px;
+            margin-left: 10px;
+            width: 40%;
+            text-align: right;
+          }
+          .anticon-heart {
+            line-height: 40px;
+          }
+          a {
+            color: white;
+            margin-right: 20px;
+            img {
+              display: inline;
+              margin: 0 5px;
+              border-radius: 50%;
+              height: 20px;
+              width: 20px;
+              background: linear-gradient(90deg,#f2f2f2 25%,#e6e6e6 37%,#f2f2f2 63%);
+              background-size: 400% 100%;
+              animation: el-skeleton-loading 1.4s ease infinite;
+              
+            }
+          }
+        }
+        p {
+          height: 20px;
+          font-size: 12px;
+        }
+      }
+    }
+    .ant-pagination {
+      text-align: center;
+      height: 80px;
+    }
+  }
+  .noMore {
+    text-align: center;
+    color: #888;
+    padding: 20px;
+  }
+}
+
+@keyframes el-skeleton-loading{
+  0%{background-position:100% 50%}
+  100%{background-position:0 50%}
+}
